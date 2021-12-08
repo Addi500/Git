@@ -116,6 +116,9 @@ def convert_and_delete (df_dict):
 
     return df_dict
 
+def close_conn(conn):
+    conn.close()
+
 if __name__ == "__main__":
     conn, cur = connection_and_cursor()
     df = initial_df(cur)
@@ -124,3 +127,4 @@ if __name__ == "__main__":
     df_dict = convert_and_delete(df_dict)
     for i in df_dict:
         print(i, ":\n", df_dict[i].info())
+    close_conn(conn)
