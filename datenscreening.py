@@ -125,6 +125,6 @@ if __name__ == "__main__":
     df = drop_non_relevant(df)
     df_dict = make_df_dict(df)
     df_dict = convert_and_delete(df_dict)
-    for i in df_dict:
-        print(i, ":\n", df_dict[i].info())
+    #for i in df_dict:
+        #print(i, ":\n", df_dict[i].info())
     close_conn(conn)
