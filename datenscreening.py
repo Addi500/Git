@@ -3,7 +3,6 @@ import plotly #plotting #1
 import pandas as pd #Dataframes
 import matplotlib as plt #plotting #2
 
-#keine ahnung wofür das nochmal war, aber ist wichtig ;)
 import sys
 import numpy
 numpy.set_printoptions(threshold=sys.maxsize)
